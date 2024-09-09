@@ -17,19 +17,19 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 const formData = new FormData(this);
 
 
-fetch(this.action, {
-    method: this.method,
-    body: formData,
-}).then(response => {
-    if (response.ok) {
-        alert("Form submitted successfully!");
-        window.location.href = "portfolio.html"; // Redirect to home page (adjust the path as needed)
-    } else {
-        alert("There was a problem submitting the form.");
-    }
-}).catch(error => {
-    alert("There was a problem submitting the form.");
-    console.error("Error:", error);
-});
+// fetch(this.action, {
+//     method: this.method,
+//     body: formData,
+// }).then(response => {
+//     if (response.ok) {
+//         alert("Form submitted successfully!");
+//         window.location.href = "portfolio.html"; // Redirect to home page (adjust the path as needed)
+//     } else {
+//         alert("There was a problem submitting the form.");
+//     }
+// }).catch(error => {
+//     alert("There was a problem submitting the form.");
+//     console.error("Error:", error);
+// });
 
-});
+// });
