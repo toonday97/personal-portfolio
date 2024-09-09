@@ -1,0 +1,443 @@
+body {
+    min-width: 90vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px 40px 20px; 
+    overflow-x: hidden;
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: all 0.5s;
+    
+    /* margin-left: 150px; */
+}
+
+.navbar-scrolled {
+    background-color: grey;
+    box-shadow: 0px 3px 10px rgb(169, 169, 169, 0.15) ;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* .navbar-nav {
+    gap: 225px;
+} */
+
+.nav-link {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.nav-item:hover {
+    color: white;
+    background-color: rgb(199, 197, 197);
+    transition: width 2.5s ease-in;
+    border-radius: 10px;
+}
+
+#websiteLogo {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+#homeImage {
+    letter-spacing: 40px;
+    font-size: 5em;
+}
+
+#homeImage2 {
+    font-size: 3em;
+    padding-top: 20px;
+    font-family: cursive;
+    letter-spacing: 2.5px;
+}
+
+/* #skillsIcon {
+    padding-left: 75px;
+} */
+
+
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-size: contain;
+
+    object-fit: cover;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: .5;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.bar-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* .chart-container {
+    width: 100%;
+    max-width: 600px;   
+} */
+
+/* .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 2px;
+    
+}
+
+.bar-fill {
+    width: 0;
+    height: 30px;
+    background-color: #93de96;
+    color: white;
+    text-align: right;
+    line-height: 25px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+.bar-fill::after {
+    content: '';
+} */
+
+#aboutMe-Parent {
+    background: linear-gradient(to right, #f7f5f4, #e2dad4, #cad0db, #b1b1ed);
+    margin-top: 10px;
+    width: 68%;
+}
+
+#aboutMe-Parent h1 {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#aboutMe-Parent p {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#aboutMe-img2 {
+    width: 400px;
+}
+
+#services-Parent {
+    background: linear-gradient(to right, #f7f5f4, #e2dad4, #cad0db, #b1b1ed);
+    margin-top: 10px;
+}
+
+#servicesIcon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#servicesEdit p {
+    font-size: 0.9em;
+}
+
+#portfolioImg {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+}
+
+#contactMe-parent {
+    background: linear-gradient(to right, #f7f5f4, #e2dad4, #cad0db, #b1b1ed);
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.imageText {
+    position: relative;
+    /* top:2175px;
+    left:65px;
+    width:350px; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: rgba(0, 0, 0, 0.2);
+    /* padding: 25px 0px 350px 0px; */
+    opacity: 0;
+    transition: opacity 1.0s ease;
+}
+
+.imageText:hover {
+    opacity: 1;
+    cursor: pointer;  
+}
+
+.footerParent {
+    padding: 50px;
+    background: linear-gradient(to right, #f7f5f4, #e2dad4, #cad0db, #b1b1ed);
+}
+
+.socials {
+    /* display: flex;   */
+    /* gap: 7.5px; */
+    bottom: 0;
+}
+
+.socials .linkedin, .socials .twitter, .socials .instagram {
+    border-radius: 100%;
+    transition: 2s;
+    background-color: grey;
+    border-color: white;
+}
+
+.socials .linkedin:hover{
+    border-radius: 100%;
+    background-color: blue;
+}
+
+.socials .twitter:hover{
+    border-radius: 100%;
+    background-color: black;
+}
+
+.socials .instagram:hover{
+    border-radius: 100%;
+    /* background-color: black; */
+    background: linear-gradient(to right, #f7f5f4, #e2dad4, #cad0db, #b1b1ed);
+    /* background-image: linear-gradient(to left, rgb(212, 135, 135), rgb(169, 148, 108) white); */
+}
+
+.socials .contact-Me {
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.socials .contact-Me:hover {
+    border-radius: 10px;
+    background-color: black;
+}
+
+
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 745px;
+    margin-top: 40px;
+}
+
+.footerContact p {
+    font-size: 1.0em;
+}
+
+.footerContact a {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.footerSize {
+    font-size: 2.0em;
+    font-family: cursive;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.container:first-of-type{
+    animation: none;
+}
+
+@media (max-width: 767px) {
+    #servicesIcon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    #homeImage {
+        letter-spacing: 20px;
+        font-size: 4em;
+    }
+
+    #homeImage2 {
+        font-size: 1.5em;
+        padding-top: 15px;
+        font-family: cursive;
+    }
+
+    .imageText {
+        position:absolute;
+        top:2915px;
+        left:35px;
+        width:350px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 25px 0px 350px 0px;
+        opacity: 0;
+        transition: opacity 1.0s ease;
+    }
+
+    #aboutMe-Parent {
+        background: linear-gradient(to right, #f7f5f4, #e2dad4, #cad0db, #b1b1ed);
+        margin-top: 10px;   
+        padding: 10px; 
+        width: 100%;     
+    }
+
+    .footerContact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .footerSize {
+        font-size: 2.5em;
+        font-family: cursive;
+        letter-spacing: 1.0px;
+    }
+
+    .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            flex-wrap: wrap;
+            margin-top: 40px;
+    }
+    .copyright {
+        margin-top: -725px;
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 768px) and 
+        (max-width: 1023px) {
+            #aboutMe-Parent {
+                background: linear-gradient(to right, #f7f5f4, #e2dad4, #cad0db, #b1b1ed);
+                margin-top: 10px;   
+                padding: 10px; 
+                width: 100%;     
+            }
+
+            #aboutMe-img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .footer-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 100px;
+                margin-top: 40px;
+            }
+
+            #homeImage {
+                letter-spacing: 50px;
+                font-size: 5em;
+            }
+
+            #homeImage2 {
+                font-size: 1.8em;
+                padding-top: 15px;
+                font-family: cursive;
+            }
+        }
+
+@media (min-width: 1024px) and
+        (max-width: 1440px) {
+            #aboutMe-Parent {
+                background: linear-gradient(to right, #f7f5f4, #e2dad4, #cad0db, #b1b1ed);
+                margin-top: 10px;
+                width: 62%;
+            }
+
+            .footer-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 600px;
+                margin-top: 40px;
+            }
+        }
+
+
+
